@@ -21,4 +21,9 @@ func main() {
 	authTokens = append(authTokens, "Bearer-flsadfjsigigsgdsigu") // reallocates the memory
 
 	fmt.Println(authTokens)
+
+	var courses = []string{"Full Stack", "AI", "Devops", "FDE"} //removing ai
+	var index int = 1
+	courses = append(courses[:index], courses[index+1:]...)
+	fmt.Println(courses)
 }
